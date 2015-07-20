@@ -1,1 +1,13 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="oled_cleardisplay" id="40" x="-7" y="28">
+    <next>
+      <block type="oled_drawnumber" id="31" inline="true">
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="22">
+            <field name="LIGHT">RED</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
