@@ -14,6 +14,9 @@
                 <field name="LIGHT">RED</field>
               </block>
             </value>
+            <next>
+              <block type="robot_delay" id="77" inline="true"></block>
+            </next>
           </block>
         </next>
       </block>
