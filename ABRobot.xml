@@ -1,44 +1,40 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="61" inline="true" x="56" y="140">
+  <block type="controls_repeat" id="61" inline="true" x="178" y="66">
     <value name="TIMES">
       <block type="math_number" id="69">
         <field name="NUM">10000</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="144">
+      <block type="oled_cleardisplay" id="40">
         <next>
-          <block type="oled_drawnumber" id="31" inline="true">
-            <value name="NUMBER">
-              <block type="sensor_spectrometer" id="22">
-                <field name="LIGHT">RED</field>
+          <block type="oled_setcursor" id="114" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="127">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="134">
+                <field name="NUM">10</field>
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="154">
+              <block type="oled_drawnumber" id="31" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="22">
+                    <field name="LIGHT">RED</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="robot_delay" id="77" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="96">
-                        <field name="NUM">1000</field>
-                      </block>
-                    </value>
+                  <block type="movement_stop" id="154">
                     <next>
-                      <block type="oled_cleardisplay" id="40">
-                        <next>
-                          <block type="oled_setcursor" id="114" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="127">
-                                <field name="NUM">10</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="134">
-                                <field name="NUM">10</field>
-                              </block>
-                            </value>
+                      <block type="robot_delay" id="77" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="96">
+                            <field name="NUM">1000</field>
                           </block>
-                        </next>
+                        </value>
                       </block>
                     </next>
                   </block>
@@ -49,5 +45,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_forward" id="144"></block>
+    </next>
   </block>
 </xml>
