@@ -9,7 +9,7 @@
       <block type="controls_if" id="319" inline="false">
         <value name="IF0">
           <block type="logic_compare" id="387" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">LT</field>
             <value name="A">
               <block type="sensor_spectrometer" id="365">
                 <field name="LIGHT">RED</field>
